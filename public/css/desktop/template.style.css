@@ -1,0 +1,27 @@
+*{
+  box-sizing: border-box;
+}
+body{
+  margin: 0px;
+}
+
+#container{
+  max-width: 1200px;
+  margin: auto;
+}
+#header{
+  padding:20px;
+  background-color: rgba(46, 222, 31,0.7);
+}
+#header-title{
+  display: inline-block;
+  padding-left: 30px;
+  padding-right: 30px;
+
+}
+#header-title>span{
+  font-family: 'Chakra Petch', sans-serif;
+  font-weight: bold;
+  font-size: 30px;
+  color: rgba(228, 54, 16);
+}
