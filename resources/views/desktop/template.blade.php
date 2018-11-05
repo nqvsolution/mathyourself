@@ -3,8 +3,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Tự Học Toán</title>
   <link rel="stylesheet" href="{{ asset('css/desktop/template.style.css') }}">
+  <link rel="stylesheet" href="{{ asset('css/common.style.css') }}">
+   @yield('css')
   <link href="https://fonts.googleapis.com/css?family=Chakra+Petch" rel="stylesheet">
-  @yield('css')
 </head>
 <body>
   <div id="container">
