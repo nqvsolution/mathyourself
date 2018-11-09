@@ -1,0 +1,21 @@
+#items-content{
+	padding:20px 50px;
+	visibility: hidden;
+}
+
+.items-choice{
+	padding: 15px 20px;
+}
+
+.items-choice img{
+ 	width: 100%;
+ 	height: 100%; 
+ 	border-radius: 14px;
+ 	box-shadow: 4px 6px 6px gray;
+ 	-webkit-transition: box-shadow 1s; /* For Safari 3.1 to 6.0 */
+    transition: box-shadow 1s;
+}
+
+.items-choice:hover img{
+	box-shadow: 4px 6px 6px black;
+}
