@@ -8,6 +8,9 @@
    @yield('font')
   <link href="https://fonts.googleapis.com/css?family=Chakra+Petch" rel="stylesheet">
   <script type="text/javascript" src="js/jquery/jquery-3.3.1.min.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head> 
 </head>
 <body>
   <div id="container">

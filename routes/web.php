@@ -13,7 +13,12 @@
 
 Route::get('/', function () {
     return view('index');
-});
+})->name('/');
 Route::get('/page', function () {
     return view('page');
 });
+Route::get('/admin',function(){
+	return view('admin/index');
+});
+Route::get('/login','Auth\RegisterController@showRegistrationForm');
+Route::post('/login','Auth\RegisterController@saveUser');
