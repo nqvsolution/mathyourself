@@ -23,7 +23,7 @@ class RegisterController extends Controller
      */
 
     public function showRegistrationForm(){
-        return view('user.login');
+        return view('user.register');
     }
 
     public function saveUser(Request $request){

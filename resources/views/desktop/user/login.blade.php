@@ -10,48 +10,25 @@
 		
 			<div id="form-wrapper">
 				<div id="form-container">
-					<!--display error input message-->
-					@if ($errors->any())
-    					<div class="alert alert-danger">
-        					<ul>
-            		@foreach ($errors->all() as $error)
-                			<li>{{ $error }}</li>
-            		@endforeach
-        					</ul>
-   						 </div>
+					@if( session('status') )
+						<p>{{ session('status') }}</p>
 					@endif
-					<!--end display input message-->
-					<form method="post" action="{{ url('/login') }}">
-						  {{ csrf_field() }}
-						 <div class="input-wrapper">
-						 	<span>Họ</span></br>
-						  	<input type="text" name="first_name" value="{{ old('first_name') }}" />
-						 </div>
-						 <div class="input-wrapper">
-						 	<span>Tên</span></br>
-						  	<input type="text" name="last_name" value="{{ old('last_name') }}"/>
-						 </div>
-						 <div class="input-wrapper">
-						  	<span>Địa Chỉ Email</span></br>
+					<form method="post" action="{{ url('/dang-nhap') }}">
+							{{ csrf_field() }}
+						<div class="input-wrapper">
+							<span>Địa Chỉ Email</span></br>
 						  	<input type="email" name="email" value="{{ old('email') }}"/>
-						 </div>
-						 <div class="input-wrapper">
+						</div>
+						<div class="input-wrapper">
 						  	<span>Mật Khẩu</span></br>
 						  	<input type="password" name="password"/>
-						 </div>
+						</div>
 						 <div class="input-wrapper">
-						  	<span>Nhập Lại Mật Khẩu</span></br>
-						  	<input type="text" name="re_password"/>
-						 </div>
-						 <div class="input-wrapper">
-						 	<button class="btn2"> Đăng Ký</button>
-						 </div>
-						 <div id="left-right-btn">
+						 	<button class="btn2"> Đăng Nhập</button>
+						</div>
+						<div id="left-right-btn">
 						 	<div class="btn2" id="btn2-left">
-						 		<i class="fa fa-facebook-f"></i><span>Đăng Ký Bằng Facebook</span>
-						 	</div>
-						 	<div class="btn2" id="btn2-right">
-						 		<span>Đăng Nhập</span><i class="fa fa-angle-right"></i>
+						 		<i class="fa fa-facebook-f"></i><span>Đăng Nhập Bằng Facebook</span>
 						 	</div>
 						 </div>
 					</form>

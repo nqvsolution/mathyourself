@@ -4,6 +4,10 @@
 @endsection
 @section('body-content')
   <div id="items-content">
+      @php
+        $user = Auth::user();
+        echo $user['first_name'];
+      @endphp
       <div class="row">
 
         <div class="col-4">

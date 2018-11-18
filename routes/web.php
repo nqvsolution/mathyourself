@@ -20,5 +20,8 @@ Route::get('/page', function () {
 Route::get('/admin',function(){
 	return view('admin/index');
 });
-Route::get('/login','Auth\RegisterController@showRegistrationForm');
-Route::post('/login','Auth\RegisterController@saveUser');
+Route::get('/dang-ky','Auth\RegisterController@showRegistrationForm');
+Route::post('/dang-ky','Auth\RegisterController@saveUser');
+Route::get('/dang-nhap','Auth\LoginController@showLogin');
+Route::post('/dang-nhap','Auth\LoginController@login');
+Route::get('/dang-xuat','Auth\LogoutController@logout');
